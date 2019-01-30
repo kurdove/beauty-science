@@ -1,0 +1,11 @@
+{
+  "name": "beauty-science",
+  "version": "1.0.0",
+  "description": "Skin care salon website",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "set NODE_ENV=test && jasmine"
+  },
+  "author": "Evgheni Curdov",
+  "license": "ISC"
+}
