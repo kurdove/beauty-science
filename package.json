@@ -4,8 +4,17 @@
   "description": "Skin care salon website",
   "main": "src/server.js",
   "scripts": {
-    "test": "set NODE_ENV=test && jasmine"
+    "test": "set NODE_ENV=test && jasmine",
+    "start": "node src/server.js"
   },
   "author": "Evgheni Curdov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.0.0",
+    "request": "^2.83.0"
+  },
+  "dependencies": {
+    "eslint": "^5.12.1",
+    "express": "^4.16.2"
+  }
 }
