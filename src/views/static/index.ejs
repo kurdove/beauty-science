@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../static/partials/head.ejs %>
+</head>
+
+<body>
+  <div class="conteiner">
+    <div class="row">
+      <div class="col-sm-2 navbar">
+        <div class="sidenav">
+          <div id="logo" >
+          <img src="../images/logo.png" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;" alt="Beauty Scince logo" width="250px">
+          </div>
+          <a href="#about">ABOUT US</a>
+          <a href="#services">SERVICES</a>
+          <a href="#contact">CONTACT</a> <br><br><br>
+          <a href="#apointment">APPOINTMENTS</a>
+        </div>
+      </div>
+
+      <div class="col-sm-10 header-cont text-center">
+        <div class="header-pic">
+          <img src="../images/about_01.jpg" class="full" width="100%">
+          <h3><%= title %></h3>
+        </div>
+
+        <section class="row text-center">
+
+          <section class="col-lg-4 description">
+            <h4 class="card-title">SERVICES</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+          </section>
+
+          <section class="col-lg-4 description">
+            <h4 class="card-title">PRODUCTS</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+          </section>
+
+          <section class="col-lg-4 description">
+            <h4 class="card-title">OFFERS</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+          </section>
+
+        </section>
+
+      </div>
+    </div>
+  </div>
+   <% include ./partials/baseScripts.ejs %>
+</body>
+</html>
