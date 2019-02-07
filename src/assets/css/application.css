@@ -5,20 +5,18 @@ body {
 }
 
 .sidenav {
-    /*min-width: 300px;*/
     height: 100%;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #ffffff;
-    /*overflow-x: hidden;*/
     padding-top: 20px;
 }
 
 .sidenav a {
     padding: 10px 25px 10px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: #818181;
     display: block;
     text-align: right;
@@ -36,9 +34,11 @@ body {
 }
 
 .header-pic {
-    /*position: relative;*/
-    padding-bottom: 70px;
+    padding-bottom: 50px;
+    padding-left: 5px;
     text-align: center;
+    border-bottom: 1px;
+    border-bottom-color: #747474
 }
 
 .header-pic H3{
@@ -53,7 +53,6 @@ body {
 		1.2px -1.2px 0 #858585c2,
 		-1.2px 1.2px 0 #858585c2,
 		1.2px 1.2px 0 #858585c2;
-    /*-webkit-text-stroke: 1.2px #858585c2;*/
 }
 
 .description {
@@ -69,11 +68,14 @@ img {
 .header-cont {
     padding: 0;
     color: #747474;
-    /*z-index: 1999;*/
 }
 
 .navbar {
     padding: 0;
+}
+
+hr {
+    width: 75%
 }
 
 /* Annimated text*/
