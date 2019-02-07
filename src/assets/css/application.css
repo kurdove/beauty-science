@@ -5,20 +5,18 @@ body {
 }
 
 .sidenav {
-    /*min-width: 300px;*/
     height: 100%;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #ffffff;
-    /*overflow-x: hidden;*/
     padding-top: 20px;
 }
 
 .sidenav a {
     padding: 10px 25px 10px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: #818181;
     display: block;
     text-align: right;
@@ -36,17 +34,25 @@ body {
 }
 
 .header-pic {
-    /*position: relative;*/
-    padding-bottom: 70px;
+    padding-bottom: 50px;
+    padding-left: 5px;
     text-align: center;
+    border-bottom: 1px;
+    border-bottom-color: #747474
 }
 
 .header-pic H3{
+    letter-spacing: 2px;
     position: absolute;
     top: 80px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #474747c9
+    color: white;
+    text-shadow:
+		-1.2px -1.2px 0 #858585c2,
+		1.2px -1.2px 0 #858585c2,
+		-1.2px 1.2px 0 #858585c2,
+		1.2px 1.2px 0 #858585c2;
 }
 
 .description {
@@ -62,9 +68,45 @@ img {
 .header-cont {
     padding: 0;
     color: #747474;
-    /*z-index: 1999;*/
 }
 
 .navbar {
     padding: 0;
 }
+
+hr {
+    width: 75%
+}
+
+/* Annimated text*/
+#text-animated span{
+    display:inline-block; animation:float 1.5s ease-in-out infinite;
+}
+@keyframes float {
+    0%,100%{ transform:none; }
+    10%{ transform:translateY(0px) rotate(0deg); }
+    33%{ transform:translateY(-1px) rotate(-2deg); }
+    66%{ transform:translateY(1px) rotate(2deg); }
+}
+
+.sidenav:hover #text-animated span { animation:bounce 1.5s ease-in-out infinite; }
+@keyframes bounce {
+    0%,100%{ transform:translate(0); }
+    25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+    50%{ transform:translateY(-10px) rotate(3deg) scale(1.1);  }
+}
+
+#text-animated span:nth-child(2){ animation-delay:.05s; }
+#text-animated span:nth-child(3){ animation-delay:.1s; }
+#text-animated span:nth-child(4){ animation-delay:.15s; }
+#text-animated span:nth-child(5){ animation-delay:.2s; }
+#text-animated span:nth-child(6){ animation-delay:.25s; }
+#text-animated span:nth-child(7){ animation-delay:.3s; }
+#text-animated span:nth-child(8){ animation-delay:.35s; }
+#text-animated span:nth-child(9){ animation-delay:.4s; }
+#text-animated span:nth-child(10){ animation-delay:.45s; }
+#text-animated span:nth-child(11){ animation-delay:.5s; }
+#text-animated span:nth-child(12){ animation-delay:.55s; }
+#text-animated span:nth-child(13){ animation-delay:.6s; }
+#text-animated span:nth-child(14){ animation-delay:.65s; }
+/* Annimated text*/
