@@ -8,46 +8,78 @@
 <body>
   <div class="conteiner">
     <div class="row">
-      <div class="col-sm-3 col-xl-2 navbar">
-        <div class="sidenav">
-          <div id="logo">
-          <img src="../images/logo.png"  alt="Beauty Scince logo">
-          </div>
-          <a href="#about">ABOUT US</a>
-          <a href="/services">SERVICES</a>
-          <a href="#contact">CONTACT</a> <br><br><br>
-          <a id="text-animated" href="https://squareup.com/appointments/book/PNKZF4S3XABB3/test-appointments">
-          <span>A</span><span>P</span><span>P</span><span>O</span><span>I</span><span>N</span><span>T</span><span>M</span><span>E</span><span>N</span><span>T</span><span>S</span>
-          </a>
-        </div>
-      </div>
+      <% include ../static/partials/navbar.ejs %>
 
       <div class="col-sm-9 col-xl-10 header-cont text-center">
-        <div class="header-pic">
-          <img src="../images/about-01.png" class="full" alt="About picture">
-          
-          <section class="description" id="pholosophy">
-          <h4 class="card-title">OUR PHILOSOPHY</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-          </section>
-          <hr>
+        <div class="services-pic">
+          <img src="../images/services-01.png" class="full" alt="Services picture">
         </div>    
 
-        <section class="row text-center">
+        <section id="services-title">
+          <h4 class="card-title">SERVICES</h4>
+        </section>
+        <hr>
 
-          <section class="col-lg-4 description">
-            <h4 class="card-title">SERVICES</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+        <section class="row row-centered"> <!-- please debug services bootstrap layout -->
+
+          <section class="row row-centered">
+
+            <section class="col-lg-3 description col-centered">
+              <a href="#service 1">
+                <h4 class="card-title">SERVICE 1</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+              </a>
+            </section>
+
+            <section class="col-lg-3 description col-centered">
+              <a href="#service 2">
+                <h4 class="card-title">SERVICE 2</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+              </a>
+            </section>
+
+            <section class="col-lg-3 description col-centered">
+              <a href="#service 3">              
+                <h4 class="card-title">SERVICE 3</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+              </a>
+            </section>
+
+            <section class="col-lg-3 description col-centered">
+              <a href="#service 4">
+                <h4 class="card-title">SERVICE 4</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+              </a>
+            </section>
+
           </section>
 
-          <section class="col-lg-4 description">
-            <h4 class="card-title">PRODUCTS</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-          </section>
+          <section class="row row-centered">
 
-          <section class="col-lg-4 description">
-            <h4 class="card-title">OFFERS</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+            <section class="col-lg-3 description col-centered">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+            </section>
+
+            <section class="col-lg-3 description col-centered">
+              <a href="#service 5">
+                <h4 class="card-title">SERVICE 5</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+              </a>
+            </section>
+
+            <section class="col-lg-3 description col-centered">
+              <a href="#service 6">
+                <h4 class="card-title">SERVICE 6</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+              </a>
+            </section>
+
+            <section class="col-lg-3 description col-centered">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+            </section>
+
           </section>
 
         </section>
@@ -55,6 +87,7 @@
       </div>
     </div>
   </div>
-   <% include ./partials/baseScripts.ejs %>
+
+  <% include ../static/partials/baseScripts.ejs %>
 </body>
 </html>
