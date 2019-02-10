@@ -7,12 +7,18 @@
 
 <body>
   <div class="conteiner">
+
+    <% include ../static/partials/messages.ejs %>
+    
     <div class="row">
       <% include ../static/partials/navbar.ejs %>
 
       <div class="col-sm-9 col-xl-10 header-cont text-center">
         <div class="header-pic">
           <img src="../images/about-01.png" class="full" alt="About picture">
+          
+          <% include ../static/partials/sign_in.ejs %>
+
           <h3><%= title %></h3>
           <section class="description" id="pholosophy">
           <h4 class="card-title">OUR PHILOSOPHY</h4>

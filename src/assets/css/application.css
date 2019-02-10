@@ -59,9 +59,10 @@ body {
 }
 
 .header-pic H3{
+    opacity: .75;
     letter-spacing: 2px;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -72,7 +73,23 @@ body {
 		1.2px 1.2px 0 #858585c2;
 }
 
-.description {
+.user-link-section {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+}
+
+.user-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #616161;
+    opacity: .65;
+}
+
+.description,.signup {
     padding: 20px 30px 20px 30px;
     color: #8f8f8f;
 }
@@ -84,7 +101,7 @@ img {
 
 .header-cont {
     padding: 0;
-    color: #747474;
+    color: #8f8f8f;
 }
 
 .navbar {
@@ -93,6 +110,17 @@ img {
 
 hr {
     width: 75%
+}
+
+.signup div {
+    width: 75%;
+    min-width: 400px;
+    max-width: 700px;
+}
+
+.form-group {
+    margin: 30px auto; 
+    width: 250px;
 }
 
 /* Annimated text*/
