@@ -7,12 +7,18 @@
 
 <body>
   <div class="conteiner">
+
+    <% include ../static/partials/messages.ejs %>
+
     <div class="row">
       <% include ../static/partials/navbar.ejs %>
 
       <div class="col-sm-9 col-xl-10 header-cont text-center">
         <div class="services-pic">
           <img src="../images/services-01.png" class="full" alt="Services picture">
+
+          <% include ../static/partials/sign_in.ejs %>
+
         </div>    
 
         <section id="services-title">
